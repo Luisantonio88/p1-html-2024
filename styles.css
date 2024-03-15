@@ -137,6 +137,16 @@ main {
     margin-left: 20vh;
     flex-grow: 1;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    border-radius: 5px;
+    border: 2px solid var(--light);
+    max-width: 700px;
 }
 
 h1 {
@@ -186,13 +196,20 @@ h1 {
 
 .hidden-text {
     opacity: 0%;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 10px;
     color: hsl(180, 85%, 15%);
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out, font-size .5s ease-in;
 }
+
 .whitekey:hover .hidden-text {
     opacity: 100%;
+    font-size: 22px;
+}
+
+.blackkey:hover .hidden-text {
+    opacity: 100%;
+    font-size: 22px;
 }
 
 .pianonames {
