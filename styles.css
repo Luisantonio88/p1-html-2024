@@ -156,8 +156,20 @@ main img {
     border: 2px solid var(--light);
     max-width: 700px;
     box-shadow: 3px 3px 2px 0px var(--dark);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+
+main .int {
+    max-width: 350px;
+}
+
+.intervals {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+td {width: 25%;}
 
 h1 {
     font-weight: 100;
