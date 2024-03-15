@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>music theory</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="img" href="assets/treble.png">
 </head>
 <body>
     <nav>
@@ -33,6 +34,13 @@
             <a href="#">Inversions</a>
             <a href="#">Seventh Chords</a>
             <a href="#">Modes</a>
+            <a href="#">Secondary Dominants</a>
+            <a href="#">Other Scales</a>
+            <a href="#">Modal Interchange</a>
+            <a href="#">Cadences</a>
+            <a href="#">Upper Structures</a>
+
+            <h3>&copy; 2024</h3>
 
         </div>
         <main>
@@ -94,8 +102,54 @@
                 <div class="pianokeyname"><b>B</b></div>
             </div>
             <h1>Intervals</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad molestiae mollitia ipsa blanditiis distinctio nostrum? Numquam, laboriosam aut harum officia fuga, ratione porro reprehenderit, rerum et voluptates perferendis sint similique!</p>
             <h1>Major Scale</h1>
             <h1>Circle of Fifths</h1>
+            <div class="svg-container">
+                <svg width="400" height="400" viewBox="0 0 400 400">
+                    <style>
+                        .slice {
+                            fill: hsl(180, 100%, 25%);
+                            stroke: hsl(180, 80%, 90%);
+                            transition: fill 1s ease;
+                        }
+                        .slice:hover {
+                            fill: hsl(180, 80%, 90%);
+                        }
+                        .slice:active {
+                            fill: hsl(180, 100%, 25%);
+                        }
+                    </style>
+                    <g transform="translate(200,200) rotate(15)">
+                        <path class="slice" d="M0,0 L180,0 A180,180 0 0,1 155.88,90 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L155.88,90 A180,180 0 0,1 90,155.88 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L90,155.88 A180,180 0 0,1 0,180 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L0,180 A180,180 0 0,1 -90,155.88 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L-90,155.88 A180,180 0 0,1 -155.88,90 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L-155.88,90 A180,180 0 0,1 -180,0 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L-180,0 A180,180 0 0,1 -155.88,-90 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L-155.88,-90 A180,180 0 0,1 -90,-155.88 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L-90,-155.88 A180,180 0 0,1 0,-180 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L0,-180 A180,180 0 0,1 90,-155.88 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L90,-155.88 A180,180 0 0,1 155.88,-90 Z" stroke-width="2"></path>
+                        <path class="slice" d="M0,0 L155.88,-90 A180,180 0 0,1 180,0 Z" stroke-width="2"></path>
+                    </g>
+                    
+                </svg>
+                <div class="circle-text n1">G</div>
+                <div class="circle-text n2">D</div>
+                <div class="circle-text n3">A</div>
+                <div class="circle-text n4">E</div>
+                <div class="circle-text n5">B</div>
+                <div class="circle-text n6">Gb</div>
+                <div class="circle-text n7">Db</div>
+                <div class="circle-text n8">Ab</div>
+                <div class="circle-text n9">Eb</div>
+                <div class="circle-text n10">Bb</div>
+                <div class="circle-text n11">F</div>
+                <div class="circle-text n12">C</div>
+            </div> 
+
             <h1>Relative Minor</h1>
             <h1>Triads</h1>
             <h1>Chord Progressions</h1>
