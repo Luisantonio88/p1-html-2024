@@ -1,20 +1,25 @@
 
 :root {
-    --darker: hsl(180, 85%, 15%);
-    --dark: hsl(180, 35%, 20%);
-    --mid: hsl(180, 85%, 25%);
-    --light: hsl(180, 100%, 25%);
-    --lighter: hsl(180, 80%, 90%);
-    --background-color: hsl(180, 10%, 97%);
+    --darker: hsl(178, 100%, 20%);
+    --dark: hsl(178, 75%, 35%);
+    --mid: hsl(178, 50%, 50%);
+    --light: hsl(178, 65%, 65%);
+    --lighter: hsl(178, 100%, 90%);
+    --background-color: hsl(178, 10%, 97%);
 }
 
 
 
 body {
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(180, 10%, 97%);
-    color:hsl(180, 85%, 15%)
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--darker);
+}
+
+p{
+    font-family: 'Montserrat';
+    color: black;
 }
 
 html {
@@ -37,7 +42,7 @@ nav {
     margin-bottom: 5px;
 }
 #treble-container{
-    background-color: hsl(180, 35%, 20%);
+    background-color: var(--dark);
     border-radius: 50%;
     margin: 3px 45px;
     animation: slideInOut 10s infinite;
@@ -56,9 +61,8 @@ nav {
 }
 
 nav h1{
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 0px hsla(180, 85%, 15%, 0.2);
     padding: 0;
     margin: 0 0 0 30px;
     animation: disappear 10s infinite;
@@ -77,7 +81,7 @@ nav ul {
 
 
 nav ul li a {
-    color: hsla(180, 85%, 15%, 0.9);
+    color: var(--dark);
     font-size: 1rem;
     text-align: center;
     padding: 14px 20px;
@@ -88,12 +92,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: hsla(0, 0%, 100%, 1);
-    background-color: hsla(180, 25%, 35%, 1);
+    color: white;
+    background-color: var(--dark);
 }
 
 nav ul li a:active {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .content {
@@ -103,7 +107,7 @@ nav ul li a:active {
 
 .sidebar {
     position: fixed;
-    background-color: hsla(180, 85%, 25%, 0.9);
+    background-color: var(--dark);
     border-radius: 3px;
     padding: 15px 0;
     width: 20vh; 
@@ -113,20 +117,22 @@ nav ul li a:active {
 
 .sidebar a {
     padding: 10px 15px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     display: block;
-    transition: background-color 1s ease-out;
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform-origin: left center;
 }
 
 .sidebar a:hover {
-    background-color: hsla(180, 80%, 90%, 0.5);
+    background-color: hsla(178, 80%, 90%, 0.5);
+    transform: scale(1.1);
 }
 
 .sidebar a:active {
-    background-color: hsl(0, 0%, 100%);
+    background-color: white;
 }
 
 .sidebar h3 {
@@ -170,6 +176,10 @@ main img {
 
 main .int {
     max-width: 350px;
+}
+
+main section div img {
+    max-width: 500px;
 }
 
 .intervals {
@@ -221,7 +231,7 @@ h1 {
 }
 
 .whitekey:active, .blackkey:active {
-    background: hsl(180, 100%, 25%);
+    background: var(--mid);
     transition: background .3s;
 }
 
@@ -229,7 +239,7 @@ h1 {
     opacity: 0%;
     font-size: 25px;
     padding-bottom: 10px;
-    color: hsl(180, 85%, 15%);
+    color: var(--dark);
     transition: opacity 1s ease-in-out, font-size .5s ease-in;
 }
 
@@ -274,7 +284,7 @@ h1 {
 .circle-text {
     position: absolute;
     font-size: 30px;
-    color: hsl(180, 85%, 15%);
+    color: var(--dark);
     pointer-events: none;
   }
 .n1 {top: 20%; left: 68%; transform: translate(-50%, -50%);}
