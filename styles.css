@@ -8,8 +8,6 @@
     --background-color: hsl(178, 10%, 97%);
 }
 
-
-
 body {
     min-height: 100vh;
     font-family: 'Poppins', Arial, sans-serif;
@@ -20,6 +18,7 @@ body {
 p{
     font-family: 'Montserrat';
     color: black;
+    text-align: justify;
 }
 
 html {
@@ -41,6 +40,7 @@ nav {
     background-color: hsl(0, 0%, 100%);
     margin-bottom: 5px;
 }
+
 #treble-container{
     background-color: var(--dark);
     border-radius: 50%;
@@ -48,6 +48,7 @@ nav {
     animation: slideInOut 10s infinite;
 
 }
+
 #treble{
     max-width: 50px;
     padding: 2px;
@@ -78,8 +79,6 @@ nav ul {
     align-items: center;
 }
 
-
-
 nav ul li a {
     color: var(--dark);
     font-size: 1rem;
@@ -87,7 +86,7 @@ nav ul li a {
     padding: 14px 20px;
     text-decoration: none;
     border-radius: 3px;
-    transition: color .3s ease, background-color .5s ease;
+    transition: color .3s ease, background-color 1.2s ease;
     margin-right: 15px;
 }
 
@@ -157,20 +156,20 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 3px 0 var(--dark);
+    border-radius: 5px;
+    padding: 40px;
 }
 
 section:target {
-    padding-top: 75px;
-    margin-top: -75px;
+    padding-top: 70px;
 }
-
 
 main img {
     border-radius: 5px;
-    border: 2px solid var(--light);
+    border: 2px solid var(--mid);
     max-width: 700px;
-    box-shadow: 3px 3px 2px 0px var(--dark);
+    box-shadow: 1px 1px 3px 0px var(--dark);
     margin-bottom: 15px;
 }
 
@@ -300,6 +299,24 @@ h1 {
 .n11 {top: 20%; right: 65%; transform: translate(0%, -50%);}
 .n12 {top: 10%; left: 50%; transform: translate(-50%, 0%);}
 
+#table-intervals {
+    border-collapse: separate;
+    border-spacing: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 0 var(--dark);
+}
+
+#table-intervals td {
+    width: auto;
+}
+
+#table-triads {
+    border-collapse: separate;
+    border-spacing: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 0 var(--dark);
+}
+
 
 @keyframes slideInOut {
     0%, 90%, 100% {
@@ -331,7 +348,7 @@ h1 {
     } 
     95% {
         opacity: 0;
-        transform: scale(.8);
+        transform: scale(.9);
     }
 }
 
