@@ -317,32 +317,42 @@ h1 {
     box-shadow: 1px 1px 3px 0 var(--dark);
 }
 
+#table-modes {
+    width: 670px;
+    margin-left: 40px;
+}
+
+#table-modes td {
+    width: 12.5%;
+}
+
 #table-cadences {
     border-collapse: separate;
     border-spacing: 5px;
-    border-radius: 10px;
     box-shadow: 1px 1px 3px 0 var(--dark);
+    padding: 10px;
+    width: 900px;
 }
 
 #table-cadtitle{
-    width: 650px;
-    margin: 20px;
+    width: 900px;
+    margin: 10px;
 }
 #table-cadtitle td{
     text-align: center;
     vertical-align: middle;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #table-cadences td,th {
-    width: auto;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .cadmid {
+    width: 20%;
     cursor: pointer;
     background-color: var(--light);
     transition: background-color 1s ease;
@@ -350,8 +360,11 @@ h1 {
 .cadmid:hover {
     background-color: white;
 }
-
+.cadmid:active {
+    background-color: var(--dark);
+}
 .cadleft {
+    width: 15%;
     cursor: pointer;
     background-color: var(--lighter);
     transition: background-color 1s ease;
@@ -359,14 +372,20 @@ h1 {
 .cadleft:hover {
     background-color: white;
 }
-
+.cadleft:active {
+    background-color: var(--dark);
+}
 .cadright {
+    width: 15%;
     cursor: pointer;
     background-color: var(--lighter);
     transition: background-color 1s ease;
 }
 .cadright:hover {
     background-color: white;
+}
+.cadright:active {
+    background-color: var(--dark);
 }
 
 @keyframes slideInOut {
