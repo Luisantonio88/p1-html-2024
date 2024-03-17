@@ -302,7 +302,7 @@ h1 {
 #table-intervals {
     border-collapse: separate;
     border-spacing: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 1px 1px 3px 0 var(--dark);
 }
 
@@ -317,6 +317,57 @@ h1 {
     box-shadow: 1px 1px 3px 0 var(--dark);
 }
 
+#table-cadences {
+    border-collapse: separate;
+    border-spacing: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0 var(--dark);
+}
+
+#table-cadtitle{
+    width: 650px;
+    margin: 20px;
+}
+#table-cadtitle td{
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+#table-cadences td,th {
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cadmid {
+    cursor: pointer;
+    background-color: var(--light);
+    transition: background-color 1s ease;
+}
+.cadmid:hover {
+    background-color: white;
+}
+
+.cadleft {
+    cursor: pointer;
+    background-color: var(--lighter);
+    transition: background-color 1s ease;
+}
+.cadleft:hover {
+    background-color: white;
+}
+
+.cadright {
+    cursor: pointer;
+    background-color: var(--lighter);
+    transition: background-color 1s ease;
+}
+.cadright:hover {
+    background-color: white;
+}
 
 @keyframes slideInOut {
     0%, 90%, 100% {
